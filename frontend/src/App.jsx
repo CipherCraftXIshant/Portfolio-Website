@@ -11,7 +11,7 @@ import AudioPlayer from './components/AudioPlayer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-slate-200 font-sans selection:bg-brand-500/30 selection:text-brand-100 perspective-[1000px]">
+    <div className="min-h-screen bg-zinc-950 text-slate-200 font-sans selection:bg-brand-500/30 selection:text-brand-100">
       <CursorSparkle />
       <AudioPlayer />
       <Navbar />

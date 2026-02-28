@@ -31,13 +31,16 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-wrap items-center gap-4">
-                            <a href="#projects" className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-full font-medium transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+                            <a href="#projects" className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-full font-medium transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]">
                                 View My Work
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
-                            <a href="#contact" className="bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-700 hover:border-zinc-600 flex items-center gap-2">
-                                Resume <Download size={18} />
-                            </a>
+                            <button
+                                onClick={() => document.getElementById('audio-toggle-btn')?.click()}
+                                className="bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-700 hover:border-zinc-600 flex items-center gap-2"
+                            >
+                                Play Music <span className="text-xl">🎵</span>
+                            </button>
                         </div>
                     </motion.div>
 
