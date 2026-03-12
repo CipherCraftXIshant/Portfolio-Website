@@ -20,12 +20,12 @@ const Hero = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-500/10 text-brand-400 font-medium text-sm mb-6 border border-brand-500/20">
                             Welcome to my portfolio
                         </span>
-                        <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6 text-slate-900 dark:text-white">
                             Hi, I'm <span className="text-gradient">Cipher Xishant</span>
                             <br />
-                            <span className="text-zinc-300">I build things for the web.</span>
+                            <span className="text-zinc-500 dark:text-zinc-300">I build things for the web.</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl font-light">
+                        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl font-light">
                             I'm a full-stack developer and designer specializing in building exceptional digital experiences
                             with modern, dynamic aesthetics and robust architectures.
                         </p>
@@ -37,7 +37,7 @@ const Hero = () => {
                             </a>
                             <button
                                 onClick={() => document.getElementById('audio-toggle-btn')?.click()}
-                                className="bg-zinc-800 hover:bg-zinc-700 text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-700 hover:border-zinc-600 flex items-center gap-2"
+                                className="bg-white dark:bg-zinc-800 hover:bg-slate-50 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 flex items-center gap-2"
                             >
                                 Play Music <span className="text-xl">🎵</span>
                             </button>
@@ -52,10 +52,10 @@ const Hero = () => {
                     >
                         <div className="relative w-72 h-72 md:w-96 md:h-96">
                             <div className="absolute inset-0 border-2 border-brand-500/30 rounded-2xl transform rotate-6 transition-transform hover:rotate-12 duration-500"></div>
-                            <div className="absolute inset-0 bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-700 transform -rotate-3 transition-transform hover:-rotate-6 duration-500 shadow-2xl">
+                            <div className="absolute inset-0 bg-slate-50 dark:bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-700 transform -rotate-3 transition-transform hover:-rotate-6 duration-500 shadow-2xl">
                                 {/* Placeholder for Profile Auto-Generation / Image */}
-                                <div className="w-full h-full flex flex-col items-center justify-center bg-zinc-900 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
-                                    <div className="text-6xl font-serif font-bold text-zinc-700">CX</div>
+                                <div className="w-full h-full flex flex-col items-center justify-center bg-white dark:bg-zinc-900 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+                                    <div className="text-6xl font-serif font-bold text-zinc-300 dark:text-zinc-700">CX</div>
                                 </div>
                             </div>
                         </div>

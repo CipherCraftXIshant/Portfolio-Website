@@ -49,7 +49,7 @@ const About = () => {
                             About <span className="text-brand-500">Me</span>
                         </h2>
                         <div className="w-20 h-1 bg-brand-500 mb-8 rounded-full"></div>
-                        <p className="text-lg text-zinc-400 font-light leading-relaxed">
+                        <p className="text-lg text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
                             {data?.description || "I am a passionate developer with a knack for building beautiful, resilient software. I merge technical expertise with design sensibilities to deliver products that don't just work flawlessly but also feel incredible to use."}
                         </p>
                     </motion.div>
@@ -70,11 +70,11 @@ const About = () => {
                                     transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: index * 0.2 }}
                                     className="card-glass p-8 rounded-2xl group transition-all duration-300 h-full"
                                 >
-                                    <div className="mb-6 p-4 bg-zinc-800/50 inline-block rounded-xl group-hover:bg-zinc-800 transition-colors shadow-lg">
+                                    <div className="mb-6 p-4 bg-slate-100 dark:bg-zinc-800/50 inline-block rounded-xl group-hover:bg-slate-200 dark:group-hover:bg-zinc-800 transition-colors shadow-lg">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                                    <p className="text-zinc-400 text-sm leading-relaxed">
+                                    <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">{service.title}</h3>
+                                    <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                                         {service.description}
                                     </p>
                                 </motion.div>

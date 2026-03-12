@@ -22,7 +22,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="py-24 relative bg-zinc-900/30">
+        <section id="skills" className="py-24 relative bg-slate-50 dark:bg-zinc-900/30 transition-colors duration-500">
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-900/10 to-transparent pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,7 +32,7 @@ const Skills = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-serif font-bold mb-4 inline-block"
+                        className="text-3xl md:text-5xl font-serif font-bold mb-4 inline-block text-slate-900 dark:text-white"
                     >
                         My <span className="text-brand-500">Skills</span>
                     </motion.h2>
@@ -54,12 +54,12 @@ const Skills = () => {
                                     transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: groupIdx * 0.3 }}
                                     className="card-glass p-8 rounded-2xl border-t-4 border-t-brand-500/50 hover:border-t-brand-500 transition-colors duration-300 h-full"
                                 >
-                                    <h3 className="text-2xl font-bold mb-6 text-white">{skillGroup.category}</h3>
+                                    <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">{skillGroup.category}</h3>
                                     <div className="flex flex-wrap gap-3">
                                         {skillGroup.items.map((skill, idx) => (
                                             <span
                                                 key={idx}
-                                                className="px-4 py-2 bg-zinc-800/80 text-zinc-300 rounded-lg text-sm font-medium border border-zinc-700/50 hover:bg-brand-500/10 hover:text-brand-400 hover:border-brand-500/30 transition-all cursor-default shadow-sm hover:shadow-brand-500/20"
+                                                className="px-4 py-2 bg-slate-200 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 rounded-lg text-sm font-medium border border-zinc-300 dark:border-zinc-700/50 hover:bg-brand-500/10 dark:hover:bg-brand-500/20 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/30 transition-all cursor-default shadow-sm hover:shadow-brand-500/20"
                                             >
                                                 {skill}
                                             </span>

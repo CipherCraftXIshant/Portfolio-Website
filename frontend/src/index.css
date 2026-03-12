@@ -24,8 +24,18 @@
   }
 
   body {
-    @apply bg-zinc-950 text-slate-200 font-sans antialiased overflow-x-hidden;
-    /* subtle gradient background */
+    @apply bg-slate-50 text-slate-900 dark:bg-zinc-950 dark:text-slate-200 font-sans antialiased overflow-x-hidden transition-colors duration-500;
+  }
+
+  /* Light mode subtle gradient background */
+  html.light body {
+    background-image: radial-gradient(circle at 15% 50%, rgba(22, 163, 74, 0.05), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.05), transparent 25%);
+    background-attachment: fixed;
+  }
+
+  /* Dark mode subtle gradient background */
+  html.dark body {
     background-image: radial-gradient(circle at 15% 50%, rgba(22, 163, 74, 0.08), transparent 25%),
       radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.08), transparent 25%);
     background-attachment: fixed;
@@ -53,11 +63,11 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-400 to-accent-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-accent-500 dark:from-brand-400 dark:to-accent-400;
 }
 
 .card-glass {
-  @apply bg-zinc-900/50 backdrop-blur-md border border-zinc-800/50 shadow-xl;
+  @apply bg-white/70 dark:bg-zinc-900/50 backdrop-blur-md border border-zinc-200 dark:border-zinc-800/50 shadow-xl transition-colors duration-500;
 }
 
 /* Custom scrollbar */
@@ -66,9 +76,9 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-zinc-950;
+  @apply bg-slate-100 dark:bg-zinc-950;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+  @apply bg-slate-300 dark:bg-zinc-800 rounded-full hover:bg-slate-400 dark:hover:bg-zinc-700 transition-colors;
 }
