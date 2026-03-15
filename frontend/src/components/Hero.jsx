@@ -35,12 +35,14 @@ const Hero = () => {
                                 View My Work
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
-                            <button
-                                onClick={() => document.getElementById('audio-toggle-btn')?.click()}
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-white dark:bg-zinc-800 hover:bg-slate-50 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 flex items-center gap-2"
                             >
-                                Play Music <span className="text-xl">🎵</span>
-                            </button>
+                                View Resume <Download size={18} />
+                            </a>
                         </div>
                     </motion.div>
 

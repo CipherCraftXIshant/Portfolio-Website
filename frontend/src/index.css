@@ -18,6 +18,8 @@
   --color-accent-500: #ec4899;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
   html {
     scroll-behavior: smooth;
