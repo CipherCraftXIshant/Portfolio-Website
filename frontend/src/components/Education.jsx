@@ -4,18 +4,11 @@ import { GraduationCap } from 'lucide-react';
 
 const education = [
     {
-        degree: "Bachelor of Technology in Computer Science",
-        institution: "XYZ University",
-        duration: "2021 - 2025",
-        description: "Core coursework focused on Data Structures, Algorithms, Software Engineering, and Artificial Intelligence. Active member of the Coding Club.",
-        grade: "CGPA: 8.5/10"
-    },
-    {
-        degree: "High School (Class XII)",
-        institution: "ABC Public School",
-        duration: "2019 - 2021",
-        description: "Specialized in Sciences with Computer Science. Graduated with honors.",
-        grade: "92%"
+        degree: "Bachelor of Engineering in Computer Science and Engineering",
+        institution: "Chitkara University (Rajpura, Punjab)",
+        duration: "2024 - Present",
+        description: "Pursuing a comprehensive curriculum in computer science, focusing on modern software engineering paradigms and web technologies.",
+        grade: "CGPA: 8.89"
     }
 ];
 

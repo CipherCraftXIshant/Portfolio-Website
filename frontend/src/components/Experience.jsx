@@ -4,16 +4,16 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    role: "Software Engineer Intern",
-    company: "Tech Corp",
-    duration: "June 2025 - Present",
-    description: "Developing scalable web applications using React and Node.js. Collaborating with cross-functional teams to deliver high-quality software."
+    role: "Frontend Engineer (Open Source Contributor)",
+    company: "GirlScript Summer of Code (GSSoC'25) · Remote",
+    duration: "Sep 2025 - Oct 2025",
+    description: "Contributed to the Consult-a-Doctor open source project by redesigning UI components using React and Tailwind CSS, improving visual consistency and user experience. Identified and resolved frontend bugs, reducing UI-related issues and improving code readability across the codebase."
   },
   {
-    role: "Frontend Developer",
-    company: "Creative Agency",
-    duration: "Jan 2024 - May 2025",
-    description: "Built responsive and interactive user interfaces for various client projects. Optimized application performance and accessibility."
+    role: "Frontend Web Developer",
+    company: "Freelance · Remote",
+    duration: "July 2025 - Aug 2025",
+    description: "Designed responsive websites for clients using HTML, CSS, JavaScript, and React, ensuring cross-browser compatibility and mobile-first layouts."
   }
 ];
 

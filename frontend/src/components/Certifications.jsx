@@ -5,22 +5,22 @@ import PreviewModal from './PreviewModal';
 
 const certifications = [
     {
-        title: "AWS Certified Developer - Associate",
-        provider: "Amazon Web Services",
-        date: "Aug 2024",
-        link: "https://example.com"
-    },
-    {
-        title: "Meta Front-End Developer Professional Certificate",
+        title: "Finance Certified",
         provider: "Coursera",
-        date: "Dec 2023",
-        link: "https://example.com"
+        date: "2024",
+        link: "#"
     },
     {
-        title: "Google Data Analytics Professional Certificate",
-        provider: "Google",
-        date: "May 2023",
-        link: "https://example.com"
+        title: "Agentic AI and Agents",
+        provider: "Coursera",
+        date: "2025",
+        link: "#"
+    },
+    {
+        title: "MERN Stack Development Certification",
+        provider: "Full Stack Bootcamp",
+        date: "2024",
+        link: "#"
     }
 ];
 
@@ -33,7 +33,7 @@ export default function Certifications() {
     };
 
     return (
-        <section id="certifications" className="py-20 relative">
+        <section id="certifications" className="pt-8 pb-20 relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

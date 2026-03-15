@@ -20,27 +20,27 @@ const Projects = () => {
     const displayProjects = projects.length > 0 ? projects : [
         {
             id: 1,
-            title: "E-commerce Platform",
-            description: "A full-featured modern e-commerce platform with cart and checkout functionalities.",
-            techStack: ["React", "Express", "Node.js", "MongoDB", "Tailwind"],
+            title: "E-Cart",
+            description: "Built a production-ready, full-stack e-commerce platform with a custom Node.js/Express REST API backend and React frontend, supporting end-to-end shopping workflows. Implemented JWT-based authentication, cart management, wishlist, and category filtering.",
+            techStack: ["ReactJS", "Node.js", "Express.js", "MongoDB", "REST API"],
             githubUrl: "#",
-            liveUrl: "https://example.com"
+            liveUrl: "https://github.com/CipherCraftXIshant/E-Cart"
         },
         {
             id: 2,
-            title: "Task Management App",
-            description: "A collaborative task tracking tool built for productivity with real-time updates.",
-            techStack: ["React", "Firebase", "Tailwind"],
+            title: "Portfolio Website",
+            description: "Developed a personal portfolio with Next.js featuring interactive music playback, smooth animations, and a clean UI inspired by top developer portfolios.",
+            techStack: ["Next.js", "Node.js", "Prisma", "PostgreSQL"],
             githubUrl: "#",
-            liveUrl: "https://example.com"
+            liveUrl: "https://github.com/CipherCraftXIshant/Portfolio-Website"
         },
         {
             id: 3,
-            title: "AI Chat Interface",
-            description: "A sleek interface for interacting with large language models seamlessly.",
-            techStack: ["React", "Tailwind", "OpenAI API"],
+            title: "Quolit - Random Quote Generator",
+            description: "Built a lightweight, fast web app that fetches and displays categorized random quotes using a public API, with filter and share functionality.",
+            techStack: ["HTML", "CSS", "JavaScript"],
             githubUrl: "#",
-            liveUrl: "https://example.com"
+            liveUrl: "https://viewquotes2o.netlify.app"
         }
     ];
 
@@ -64,7 +64,7 @@ const Projects = () => {
                     </motion.h2>
                     <div className="w-20 h-1 bg-brand-500 rounded-full mb-8"></div>
                     <p className="text-lg text-zinc-600 dark:text-zinc-400 font-light max-w-2xl">
-                        Here are some of the selected projects that showcase my passion for front-end development and intuitive design.
+                        Here are some of the selected projects that showcase my passion for Web development and intuitive design.
                     </p>
                 </div>
 

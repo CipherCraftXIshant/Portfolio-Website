@@ -18,10 +18,10 @@ const Hero = () => {
                         className="w-full md:w-3/5 pt-10 md:pt-0"
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-500/10 text-brand-400 font-medium text-sm mb-6 border border-brand-500/20">
-                            Welcome to my portfolio
+                            Welcome to my portfolio Website
                         </span>
                         <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6 text-slate-900 dark:text-white">
-                            Hi, I'm <span className="text-gradient">Cipher Xishant</span>
+                            Hi, I'm <span className="text-gradient">Ishant Sharma</span>
                             <br />
                             <span className="text-zinc-500 dark:text-zinc-300">I build things for the web.</span>
                         </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                             <a
-                                href="/resume.pdf"
+                                href="https://drive.google.com/file/d/1Imz6vgmpmqF0KfiPMiRG1_5EEqHfEtMa/view?usp=share_link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white dark:bg-zinc-800 hover:bg-slate-50 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white px-8 py-3 rounded-full font-medium transition-all border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 flex items-center gap-2"
@@ -57,7 +57,7 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-slate-50 dark:bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-700 transform -rotate-3 transition-transform hover:-rotate-6 duration-500 shadow-2xl">
                                 {/* Placeholder for Profile Auto-Generation / Image */}
                                 <div className="w-full h-full flex flex-col items-center justify-center bg-white dark:bg-zinc-900 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
-                                    <div className="text-6xl font-serif font-bold text-zinc-300 dark:text-zinc-700">CX</div>
+                                    <div className="text-6xl font-serif font-bold text-zinc-300 dark:text-zinc-700">IS</div>
                                 </div>
                             </div>
                         </div>

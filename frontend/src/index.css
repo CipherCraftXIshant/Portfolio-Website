@@ -46,17 +46,14 @@
 
 /* global 3D float animation utility */
 @keyframes ambient-float {
-  0% {
-    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
-  }
+  0% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
+  50% { transform: translateY(-5px) rotateX(1deg) rotateY(-1deg); }
+  100% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
+}
 
-  50% {
-    transform: translateY(-5px) rotateX(1deg) rotateY(-1deg);
-  }
-
-  100% {
-    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
-  }
+@keyframes shine {
+  0% { transform: translateX(-150%) skewX(-15deg); }
+  100% { transform: translateX(250%) skewX(-15deg); }
 }
 
 .animate-3d-ambient {

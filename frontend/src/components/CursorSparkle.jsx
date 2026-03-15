@@ -53,7 +53,7 @@ const CursorSparkle = () => {
         <>
             {/* 3D Glowing Cursor Core */}
             <div
-                className="fixed top-0 left-0 w-10 h-10 rounded-full pointer-events-none z-[9999] mix-blend-screen transition-all duration-75 ease-out flex items-center justify-center transform-gpu"
+                className="fixed top-0 left-0 w-10 h-10 rounded-full pointer-events-none z-[9999] mix-blend-screen flex items-center justify-center transform-gpu"
                 style={{
                     transform: `translate(${mousePos.x - 20}px, ${mousePos.y - 20}px) translateZ(50px)`,
                     background: 'radial-gradient(circle, rgba(74, 222, 128, 0.4) 0%, transparent 70%)',

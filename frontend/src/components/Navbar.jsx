@@ -44,7 +44,7 @@ const Navbar = () => {
                                     whileHover={{ rotateY: 180 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    Cipher<span className="text-brand-500">.</span>
+                                    ISHANT<span className="text-brand-500">.</span>
                                 </motion.span>
                             </a>
                         </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
                                     <Linkedin size={18} />
                                 </a>
                                 <a
-                                    href="/resume.pdf"
+                                    href="https://drive.google.com/file/d/1Imz6vgmpmqF0KfiPMiRG1_5EEqHfEtMa/view?usp=share_link"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500 text-zinc-950 font-semibold text-sm hover:bg-brand-400 transition-colors shadow-lg shadow-brand-500/20"

@@ -8,7 +8,7 @@ const Footer = () => {
 
                     <div className="md:w-1/3 text-center md:text-left">
                         <a href="#home" className="text-3xl font-serif font-bold tracking-tighter inline-block mb-4 text-slate-900 dark:text-white">
-                            Cipher<span className="text-brand-500">.</span>
+                            Ishant<span className="text-brand-500">.</span>
                         </a>
                         <p className="text-zinc-600 dark:text-zinc-500 font-light leading-relaxed max-w-xs mx-auto md:mx-0">
                             Building digital products, brands, and experience with a focus on intuitive design and robust architecture.
@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-600 dark:text-zinc-500 text-sm">
-                    <p>© {new Date().getFullYear()} Cipher Xishant. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Ishant Sharma. All rights reserved.</p>
                     <p className="flex items-center gap-1">
                         Built with <Heart size={14} className="text-accent-500 fill-accent-500" /> and lots of coffee.
                     </p>
