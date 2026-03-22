@@ -68,7 +68,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="text-slate-900 dark:text-white font-bold mb-1">Email</h4>
-                                <p className="text-zinc-600 dark:text-zinc-400">hello@cipherxishant.com</p>
+                                <p className="text-zinc-600 dark:text-zinc-400">ishant4641@gmail.com</p>
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="text-slate-900 dark:text-white font-bold mb-1">Location</h4>
-                                <p className="text-zinc-600 dark:text-zinc-400">Remote / Worldwide</p>
+                                <p className="text-zinc-600 dark:text-zinc-400">Chandigarh / Remote</p>
                             </div>
                         </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="text-slate-900 dark:text-white font-bold mb-1">Phone</h4>
-                                <p className="text-zinc-600 dark:text-zinc-400">+1 (555) 123-4567</p>
+                                <p className="text-zinc-600 dark:text-zinc-400">+91 9306909499</p>
                             </div>
                         </div>
                     </motion.div>
