@@ -29,7 +29,7 @@ const Projects = () => {
             id: 2,
             title: "Portfolio Website",
             description: "Developed a personal portfolio with Next.js featuring interactive music playback, smooth animations, and a clean UI inspired by top developer portfolios.",
-            techStack: ["ReactJS", "Next.js", "Node.js", "ExpressJS", "REST API"],
+            techStack: ["ReactJS", "Framer-Motion", "Node.js", "ExpressJS", "Lucide-React", "React-Parallax-Tilt"],
             image: "/images/projects/portfolio.png",
             githubUrl: "https://github.com/CipherCraftXIshant/Portfolio-Website",
             liveUrl: "https://github.com/CipherCraftXIshant/Portfolio-Website"
