@@ -17,18 +17,18 @@ const Achievements = () => {
                     
                     <div className="card-glass p-8 rounded-2xl shadow-lg">
                         <ul className="space-y-6">
-                            <li className="flex items-start gap-4">
+                            <motion.li whileHover={{ scale: 1.02, x: 5 }} className="flex items-start gap-4 p-3 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors cursor-default">
                                 <span className="text-brand-500 text-xl font-bold leading-none mt-1">▹</span>
                                 <span className="text-zinc-700 dark:text-zinc-300 text-lg">Selected as a <strong>GSSOC'25 Contributor</strong>.</span>
-                            </li>
-                            <li className="flex items-start gap-4">
+                            </motion.li>
+                            <motion.li whileHover={{ scale: 1.02, x: 5 }} className="flex items-start gap-4 p-3 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors cursor-default">
                                 <span className="text-brand-500 text-xl font-bold leading-none mt-1">▹</span>
                                 <span className="text-zinc-700 dark:text-zinc-300 text-lg">Solved <strong>400+ DSA questions</strong> on LeetCode, CodeForces and GFG.</span>
-                            </li>
-                            <li className="flex items-start gap-4">
+                            </motion.li>
+                            <motion.li whileHover={{ scale: 1.02, x: 5 }} className="flex items-start gap-4 p-3 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors cursor-default">
                                 <span className="text-brand-500 text-xl font-bold leading-none mt-1">▹</span>
                                 <span className="text-zinc-700 dark:text-zinc-300 text-lg">Participated in multiple national-level <strong>hackathons</strong>.</span>
-                            </li>
+                            </motion.li>
                         </ul>
                     </div>
                 </motion.div>

@@ -1,40 +1,32 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Award } from 'lucide-react';
-import PreviewModal from './PreviewModal';
 
 const certifications = [
     {
         title: "Finance Certified",
         provider: "Coursera",
         date: "2024",
-        link: "#"
+        link: "https://www.coursera.org/account/accomplishments/specialization/certificate/Z1VAI7AXI5WT"
     },
     {
         title: "Agentic AI and Agents",
         provider: "Coursera",
         date: "2025",
-        link: "#"
+        link: "https://www.coursera.org/account/accomplishments/verify/M6SIW3IQ3RNL"
     },
     {
         title: "MERN Stack Development Certification",
         provider: "Full Stack Bootcamp",
         date: "2024",
-        link: "#"
+        link: "https://thingqbator.s3.ap-south-1.amazonaws.com/1758719193422_IshantSharma_Course-Excellence.pdf"
     }
 ];
 
 export default function Certifications() {
-    const [previewData, setPreviewData] = useState({ isOpen: false, url: '', title: '' });
-
-    const openPreview = (url, title, e) => {
-        e.preventDefault();
-        setPreviewData({ isOpen: true, url, title });
-    };
-
     return (
         <section id="certifications" className="pt-8 pb-20 relative">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -64,12 +56,14 @@ export default function Certifications() {
                                 <div className="p-3 bg-brand-500/10 dark:bg-brand-500/20 rounded-xl text-brand-600 dark:text-brand-400">
                                     <Award size={24} />
                                 </div>
-                                <button
-                                    onClick={(e) => openPreview(cert.link, cert.title, e)}
-                                    className="text-zinc-500 dark:text-zinc-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors bg-slate-100 dark:bg-zinc-800/50 p-2 rounded-full cursor-pointer"
+                                <a
+                                    href={cert.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-zinc-500 dark:text-zinc-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors bg-slate-100 dark:bg-zinc-800/50 p-2 rounded-full cursor-pointer inline-flex"
                                 >
                                     <ExternalLink size={16} />
-                                </button>
+                                </a>
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-lg font-bold text-slate-900 dark:text-slate-200 mb-2 leading-tight min-h-[56px]">{cert.title}</h3>
@@ -83,12 +77,6 @@ export default function Certifications() {
                 </div>
             </div>
 
-            <PreviewModal
-                isOpen={previewData.isOpen}
-                onClose={() => setPreviewData({ ...previewData, isOpen: false })}
-                url={previewData.url}
-                title={previewData.title}
-            />
         </section>
     );
 }
