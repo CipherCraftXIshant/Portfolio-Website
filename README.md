@@ -1,4 +1,4 @@
-# 🚀 Ishant Sharma's 3D Interactive Portfolio
+# 🚀 My Portfolio Website
 
 Welcome to the central repository for my interactive, 3D-driven personal portfolio website. This project merges modern UI engineering with glassmorphism aesthetics, fluid framer-motion animations, and highly performant component architecture to deliver a truly immersive user experience.
 
