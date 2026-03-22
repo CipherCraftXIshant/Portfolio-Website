@@ -21,6 +21,7 @@ const Projects = () => {
             title: "E-Cart",
             description: "Built a production-ready, full-stack e-commerce platform with a custom Node.js/Express REST API backend and React frontend, supporting end-to-end shopping workflows. Implemented JWT-based authentication, cart management, wishlist, and category filtering.",
             techStack: ["ReactJS", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "REST API"],
+            image: "/images/projects/ecart.png",
             githubUrl: "https://github.com/CipherCraftXIshant/E-Cart",
             liveUrl: "https://github.com/CipherCraftXIshant/E-Cart"
         },
@@ -28,7 +29,8 @@ const Projects = () => {
             id: 2,
             title: "Portfolio Website",
             description: "Developed a personal portfolio with Next.js featuring interactive music playback, smooth animations, and a clean UI inspired by top developer portfolios.",
-            techStack: ["ReactJS", "Next.js", "Node.js", "ExpressJS", "REST API", "PostgreSQL"],
+            techStack: ["ReactJS", "Next.js", "Node.js", "ExpressJS", "REST API"],
+            image: "/images/projects/portfolio.png",
             githubUrl: "https://github.com/CipherCraftXIshant/Portfolio-Website",
             liveUrl: "https://github.com/CipherCraftXIshant/Portfolio-Website"
         },
@@ -37,6 +39,7 @@ const Projects = () => {
             title: "Quolit - Random Quote Generator",
             description: "Built a lightweight, fast web app that fetches and displays categorized random quotes using a public API, with filter and share functionality.",
             techStack: ["HTML", "CSS", "JavaScript"],
+            image: "/images/projects/quotes.png",
             githubUrl: "https://github.com/CipherCraftXIshant/Random-Quote-Generator",
             liveUrl: "https://viewquotes2o.netlify.app"
         },
@@ -44,7 +47,8 @@ const Projects = () => {
             id: 4,
             title: "Password-Generator and Checker",
             description: "A secure utility application to generate strong, customizable passwords and dynamically check password strength criteria.",
-            techStack: ["ReactJS", "TailwindCSS", "JavaScript"],
+            techStack: ["ReactJS", "TailwindCSS"],
+            image: "/images/projects/password.png",
             githubUrl: "https://github.com/CipherCraftXIshant/Password-Generator-and-checker",
             liveUrl: "https://project-demo-sigma-green.vercel.app"
         },
@@ -52,7 +56,8 @@ const Projects = () => {
             id: 5,
             title: "Linkedin Clone",
             description: "A responsive, feature-rich front-end clone of the LinkedIn web interface, demonstrating complex layout design and component structuring.",
-            techStack: ["ReactJS", "TailwindCSS", "Vanilla"],
+            techStack: ["ReactJS", "TailwindCSS"],
+            image: "/images/projects/linkedin.png",
             githubUrl: "https://github.com/CipherCraftXIshant/LinkedinClone",
             liveUrl: "https://github.com/CipherCraftXIshant/LinkedinClone"
         }
@@ -88,13 +93,17 @@ const Projects = () => {
                             className={`flex flex-col ${idx % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-16`}
                         >
 
-                            {/* Project Image Placeholder */}
+                            {/* Project Image */}
                             <div className="w-full md:w-1/2 relative group">
                                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000} scale={1.02} transitionSpeed={2000}>
                                     <div className="absolute inset-0 bg-brand-500/20 rounded-2xl transform translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-                                    <div className="relative aspect-video bg-slate-100 dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 overflow-hidden shadow-2xl flex items-center justify-center transform-gpu">
-                                        <div className="text-zinc-400 dark:text-zinc-600 font-serif text-2xl group-hover:scale-110 transition-transform duration-500 group-hover:text-brand-500 shadow-brand-500/50 drop-shadow-2xl">{project.title} Preview</div>
-                                        <div className="absolute inset-0 bg-brand-500 mix-blend-multiply opacity-20 group-hover:opacity-0 transition-opacity duration-300"></div>
+                                    <div className="relative aspect-[16/10] bg-slate-100 dark:bg-zinc-800 rounded-2xl border border-zinc-200 dark:border-zinc-700 overflow-hidden shadow-2xl flex items-center justify-center transform-gpu">
+                                        <img 
+                                            src={project.image} 
+                                            alt={`${project.title} Interface`} 
+                                            className="w-full h-full object-cover object-top filter brightness-90 group-hover:brightness-105 transition-all duration-700 group-hover:scale-105" 
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                     </div>
                                 </Tilt>
                             </div>

@@ -8,7 +8,7 @@ const education = [
         institution: "Chitkara University (Rajpura, Punjab)",
         duration: "2024 - Present",
         description: "Pursuing a comprehensive curriculum in computer science, focusing on modern software engineering paradigms and web technologies.",
-        grade: "CGPA: 8.89"
+        grade: "CGPA: 9.1"
     }
 ];
 

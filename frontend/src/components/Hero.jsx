@@ -26,7 +26,7 @@ const Hero = () => {
                             <span className="text-zinc-500 dark:text-zinc-300">I build things for the web.</span>
                         </h1>
                         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl font-light">
-                            I'm a full-stack developer and designer specializing in building exceptional digital experiences
+                            I'm a full-stack developer specializing in building exceptional digital experiences
                             with modern, dynamic aesthetics and robust architectures.
                         </p>
 
@@ -55,10 +55,12 @@ const Hero = () => {
                         <div className="relative w-72 h-72 md:w-96 md:h-96">
                             <div className="absolute inset-0 border-2 border-brand-500/30 rounded-2xl transform rotate-6 transition-transform hover:rotate-12 duration-500"></div>
                             <div className="absolute inset-0 bg-slate-50 dark:bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-700 transform -rotate-3 transition-transform hover:-rotate-6 duration-500 shadow-2xl">
-                                {/* Placeholder for Profile Auto-Generation / Image */}
-                                <div className="w-full h-full flex flex-col items-center justify-center bg-white dark:bg-zinc-900 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
-                                    <div className="text-6xl font-serif font-bold text-zinc-300 dark:text-zinc-700">IS</div>
-                                </div>
+                                <img 
+                                    src="/images/profile.png" 
+                                    alt="Ishant Sharma - Profile" 
+                                    className="w-full h-full object-cover object-top filter hover:brightness-105 transition-all duration-500"
+                                />
+                                <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.2)] dark:shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] pointer-events-none rounded-2xl"></div>
                             </div>
                         </div>
                     </motion.div>

@@ -56,15 +56,18 @@ const AudioPlayer = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
-                        className="card-glass max-w-md w-full p-8 rounded-3xl text-center shadow-[0_0_50px_rgba(34,197,94,0.1)] border border-brand-500/20"
+                        className="card-glass relative max-w-md w-full p-8 rounded-3xl text-center shadow-[0_0_50px_rgba(34,197,94,0.1)] border border-brand-500/20"
                     >
-                        <div className="w-20 h-20 bg-brand-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <Music size={32} className="text-brand-400" />
+                        <div className="absolute top-6 left-6 text-xl font-serif font-bold tracking-tighter text-white z-10">
+                            ISHANT<span className="text-brand-500">.</span>
                         </div>
-                        <h2 className="text-3xl font-serif font-bold mb-4 text-white">Experience the Site</h2>
-                        <p className="text-zinc-400 mb-8 leading-relaxed font-light">
-                            For the full immersive 3D experience, please enable the background audio track.
-                        </p>
+
+                        <div className="flex flex-col items-center justify-center mb-6 mt-6">
+                            <div className="w-20 h-20 bg-brand-500/10 rounded-full flex items-center justify-center">
+                                <Music size={32} className="text-brand-400" />
+                            </div>
+                        </div>
+                        <h2 className="text-2xl font-serif font-bold mb-8 text-white">Would you like to play background voice?</h2>
 
                         <div className="flex flex-col gap-3">
                             <button
